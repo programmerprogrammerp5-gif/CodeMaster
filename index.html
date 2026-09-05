@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07110d">
+<meta name="description" content="CodeMaster — منصة عربية مجانية وعملية لتعلم البرمجة، المسارات، المختبر، التحديات والمشاريع.">
+<meta name="keywords" content="تعلم البرمجة, HTML, CSS, JavaScript, TypeScript, Python, C, C++, C#, Java, Kotlin, Swift, Go, Rust, PHP, Ruby, SQL, React, Vue, Angular, Node.js, Laravel, Flutter, Dart, البرمجة بالعربي, CodeMaster">
+<meta property="og:title" content="CodeMaster — تعلّم البرمجة بطريقة مختلفة">
+<meta property="og:description" content="منصة عربية مجانية للتعلم بالتدرج والتطبيق والمشاريع.">
+<meta property="og:type" content="website">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>CodeMaster — مختبر البرمجة العربي | تعلم وابنِ مشاريع</title>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"CodeMaster","description":"منصة عربية مجانية لتعلم البرمجة بالتطبيق والمشاريع"}</script>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#07110b">
+<meta name="google-site-verification" content="">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CodeMaster — تعلّم البرمجة بعقل المبرمج">
+<meta property="og:description" content="منصة عربية حديثة لتعلّم البرمجة وبناء المشاريع والتدرب عمليًا.">
+
+<link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div><div class="grid-bg"></div>
+<div class="announcement"><div class="container announce-inner"><span class="announce-dot"></span><b>CodeMaster مفتوح للجميع</b><span>تعلم البرمجة بالعربي — مجانًا</span><button class="announce-close" id="announceClose" aria-label="إغلاق">×</button></div></div>
+<header class="topbar">
+  <a class="brand" href="#home" data-route="home" aria-label="CodeMaster الرئيسية"><span>&lt;/&gt;</span> CodeMaster <b>ULTRA</b></a>
+  <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+    <a data-route="home">الرئيسية</a><a data-route="paths">المسارات</a><a data-route="courses">الدورات</a><a data-route="videos">الفيديوهات</a><a data-route="languages">التقنيات</a><a data-route="practice">المختبر</a><a data-route="projects">المشاريع</a><a data-route="quiz">التحديات</a>
+  </nav>
+  <div class="top-actions"><button class="icon-btn" id="searchBtn" aria-label="بحث">⌕</button><button class="icon-btn" id="themeBtn" aria-label="تغيير المظهر">☾</button><button class="install-btn" id="installBtn" hidden>تثبيت</button><button class="user-pill" id="loginBtn"><span class="avatar">M</span><span id="userLabel">دخول</span></button><button class="menu-btn" id="menuBtn" aria-label="القائمة">☰</button></div>
+</header>
+
+
+<main>
+<section id="home" class="page active">
+  <div class="container hero ultra-hero">
+    <div class="hero-copy reveal">
+      
+      <h1>لا تتعلم البرمجة فقط.<br><em>ابنِ بها شيئًا حقيقيًا.</em></h1>
+      <p>CodeMaster يجمع لك المسارات، الدروس، المختبر، التحديات والمشاريع في تجربة واحدة بسيطة وسريعة — من أول سطر كود إلى أول مشروع تفخر به.</p>
+      <div class="hero-actions"><button class="btn primary xl" data-route="paths">ابدأ مجانًا <span>←</span></button><button class="btn glass xl" data-route="courses">استكشف الدورات</button></div>
+      <div class="hero-proof"><span>✓ بدون تعقيد</span><span>✓ عربي</span><span>✓ تعلم بالممارسة</span><span>✓ تقدم محفوظ</span></div>
+    </div>
+    <div class="hero-stage reveal">
+      <div class="hero-orbit orbit-1"></div><div class="hero-orbit orbit-2"></div>
+      <div class="floating-chip chip-one">⚡ سريع وتفاعلي</div><div class="floating-chip chip-two">🏆 تحديات + XP</div>
+      <div class="code-window">
+        <div class="console-top"><span></span><span></span><span></span><small>codemaster.js</small></div>
+        <div class="console-body"><div class="code-line"><i>01</i><b>const</b> learner = {</div><div class="code-line"><i>02</i>&nbsp;&nbsp;goal: <mark>"build_real_projects"</mark>,</div><div class="code-line"><i>03</i>&nbsp;&nbsp;skills: [<mark>"HTML"</mark>, <mark>"CSS"</mark>, <mark>"JS"</mark>],</div><div class="code-line"><i>04</i>&nbsp;&nbsp;mode: <mark>"learn_by_doing"</mark></div><div class="code-line"><i>05</i>};</div><div class="code-line gap"><i>06</i><span class="cyan">CodeMaster</span>.start(<span class="green">∞</span>);</div></div>
+        <div class="console-bottom"><span><i></i> SYSTEM ONLINE</span><b>BUILD • LEARN • SHIP</b></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container intro-section">
+    <span class="mini-label">من محمود</span></div>
+    <div class="intro-card premium-card">
+      <div class="intro-copy"><span class="intro-kicker">رسالة من المؤسس</span><h3>أهلًا بك في CodeMaster</h3><p>هذه المنصة بدأت بفكرة بسيطة: أن يكون تعلم البرمجة بالعربي أوضح، أكثر عملية، ومتاحًا للجميع. شاهد المقدمة، ثم اختر أول خطوة.</p><div class="intro-points"><span>✓ مجاني وعربي</span><span>✓ تعلم خطوة بخطوة</span><span>✓ مختبر وتجارب</span><span>✓ مشاريع عملية</span></div><button class="btn primary small" data-route="paths">اختر مسارك الآن →</button></div>
+      <div class="intro-video"><video controls playsinline preload="metadata" poster="assets/intro-poster.png"><source src="assets/intro-codemaster.mp4" type="video/mp4">متصفحك لا يدعم الفيديو.</video><div class="video-caption"><span>CodeMaster Intro</span><small>اضغط تشغيل للاستماع للمقدمة</small></div></div>
+    </div>
+  </section>
+
+  <section class="container trust-strip"><div><b>70+</b><span>لغة وتقنية</span></div><div><b>10</b><span>مجالات تقنية</span></div><div><b>8</b><span>مسارات أساسية</span></div><div><b>∞</b><span>أفكار مشاريع</span></div><div><b>24/7</b><span>تعلم ذاتي</span></div></section>
+
+  <section class="container section">
+    <p>نركز على تجربة سريعة، متجاوبة، سهلة الاستخدام، مع تقدم واضح وتطبيق عملي.</p></div>
+    <div class="feature-grid ultra-features">
+      <article class="feature featured"><div class="feature-icon">01</div><span class="feature-label">ROADMAP</span><h3>مسار بدل الضياع</h3><p>تعرف ماذا تتعلم الآن وماذا بعده، بدل التنقل بين عشرات المصادر.</p><button class="text-btn" data-route="paths">شاهد المسارات ←</button></article>
+      <article class="feature"><div class="feature-icon">02</div><span class="feature-label">CODE LAB</span><h3>اكتب الكود الآن</h3><p>جرّب HTML وCSS وJavaScript داخل المتصفح وشاهد النتيجة فورًا.</p><button class="text-btn" data-route="practice">افتح المختبر ←</button></article>
+      <article class="feature"><div class="feature-icon">03</div><span class="feature-label">CHALLENGE</span><h3>اختبر نفسك</h3><p>أسئلة قصيرة ونتيجة فورية تساعدك على اكتشاف ما تحتاج مراجعته.</p><button class="text-btn" data-route="quiz">ابدأ تحديًا ←</button></article>
+      <article class="feature"><div class="feature-icon">04</div><span class="feature-label">PROJECTS</span><h3>ابنِ معرض أعمالك</h3><p>حوّل كل مفهوم إلى مشروع صغير يمكن تطويره خطوة بعد خطوة.</p><button class="text-btn" data-route="projects">شاهد المشاريع ←</button></article>
+    </div>
+  </section>
+
+  <section class="container showcase-section">
+    <div class="showcase-copy"><span class="eyebrow">THE LEARNING LOOP</span><h2>تعلم → طبّق → اختبر → ابنِ</h2><p>كل جزء من CodeMaster يخدم الحلقة نفسها: خذ فكرة، جرّبها، اختبر فهمك، ثم استخدمها في مشروع.</p><div class="loop"><span>01<br><b>تعلّم</b></span><i>→</i><span>02<br><b>طبّق</b></span><i>→</i><span>03<br><b>اختبر</b></span><i>→</i><span>04<br><b>ابنِ</b></span></div></div>
+    <div class="mini-dashboard"><div class="mini-top"><span>YOUR PROGRESS</span><b>LIVE</b></div><div class="mini-progress"><span style="width:68%"></span></div><div class="mini-stats"><div><b>68%</b><small>التقدم</small></div><div><b>420</b><small>XP</small></div><div><b>7</b><small>أيام</small></div></div><div class="mini-task"><span>✓</span><div><b>JavaScript — DOM</b><small>درس اليوم</small></div><em>+50 XP</em></div><div class="mini-task"><span>2</span><div><b>To‑Do App</b><small>المشروع التالي</small></div><em>قريبًا</em></div></div>
+  </section>
+
+  
+<section class="container tech-preview premium-card">
+  <div class="tech-preview-head"><div><span class="eyebrow">TECH STACK UNIVERSE</span><h2>أكثر من <em>70+</em> لغة وتقنية في مكان واحد.</h2><p>اكتشف ما يناسب هدفك بدل أن تضيع بين أسماء اللغات.</p></div><button class="btn primary" data-route="languages">استكشف كل التقنيات ←</button></div>
+  <div class="tech-marquee" aria-label="لغات وتقنيات"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>Python</span><span>Java</span><span>C++</span><span>C#</span><span>Rust</span><span>Go</span><span>PHP</span><span>Ruby</span><span>SQL</span><span>React</span><span>Node.js</span><span>Flutter</span><span>Docker</span><span>Linux</span></div>
+</section>
+
+<section class="container quick-panel premium-card"><div><span class="eyebrow">READY?</span><h2>ابدأ من الصفر، لكن لا تبقَ مبتدئًا.</h2><p>اختَر مسارًا واحدًا فقط الآن. سنترك لك الباقي.</p></div><button class="btn primary xl" data-route="paths">ابدأ رحلتك مجانًا →</button></section>
+</section>
+
+<section id="paths" class="page"><div class="container page-title"><span class="eyebrow">LEARNING PATHS</span><h1>خارطة طريقك</h1><p>مسارات منظمة من الأساسيات إلى بناء المشاريع. اختر واحدًا وابدأ.</p><div class="page-actions"><button class="btn primary small" data-route="courses">كل الدورات</button><button class="btn glass small" data-route="practice">جرّب المختبر</button></div></div><div class="container path-grid" id="pathGrid"></div></section>
+
+<section id="videos" class="page">
+  <div class="container page-title">
+    <span class="eyebrow">ARABIC VIDEO ACADEMY</span>
+    <h1>أكاديمية الفيديو العربية</h1>
+    <p>شروحات عربية مختارة للبدء بسرعة، مع إمكانية فتح الدورة كاملة على YouTube.</p>
+    <div class="page-actions">
+      <button class="btn primary small" data-route="courses">استكشف الدورات</button>
+      <button class="btn glass small" data-route="languages">كل التقنيات</button>
+    </div>
+  </div>
+  <div class="container video-library-grid" id="videoLibraryGrid"></div>
+</section>
+
+<section id="courses" class="page"><div class="container page-title"><span class="eyebrow">COURSE LIBRARY</span><h1>مكتبة الدورات</h1><p>تعلم تقنيات الويب والبرمجة من مكان واحد.</p></div><div class="container course-toolbar"><div class="search-box"><span>⌕</span><input id="courseSearch" placeholder="ابحث عن HTML، Python، React..." autocomplete="off"></div><div id="courseFilters" class="filter-row"></div></div><div class="container course-grid" id="courseGrid"></div></section>
+
+<section id="languages" class="page">
+  <div class="container page-title">
+    <span class="eyebrow">TECH UNIVERSE</span>
+    <h1>عالم لغات البرمجة</h1>
+    <p>مكتبة واسعة ومنظمة للغات والتقنيات والأدوات. ابحث، صفِّ حسب المجال، ثم ابدأ بالتعلم.</p>
+  </div>
+  <div class="container language-command premium-card">
+    <div class="language-command-copy">
+      <span class="mini-label">CODEMASTER TECH MAP</span>
+      <h2>اختر المجال قبل أن تختار اللغة.</h2>
+      <p>الويب، التطبيقات، الخوادم، البيانات، الذكاء الاصطناعي، الألعاب، قواعد البيانات، الأنظمة والأمن.</p>
+    </div>
+    <div class="search-box"><span>⌕</span><input id="languageSearch" placeholder="ابحث: Python، Rust، SQL، Flutter..." autocomplete="off"></div>
+  </div>
+  <div class="container" id="languageFilters"></div>
+  <div class="container language-grid" id="languageGrid"></div>
+</section>
+
+<section id="practice" class="page"><div class="container page-title"><span class="eyebrow">CODE LAB</span><h1>مختبر البرمجة</h1><p>بيئة تجريب حقيقية داخل المتصفح. اكتب، شغّل، عدّل.</p></div><div class="container lab premium-card"><div class="lab-tabs"><button class="tab active" data-tab="html">HTML</button><button class="tab" data-tab="css">CSS</button><button class="tab" data-tab="js">JavaScript</button><button class="btn primary small" id="runBtn">تشغيل ▶</button><button class="btn glass small" id="resetLab">إعادة ضبط</button></div><div class="lab-grid"><div class="editor-wrap"><div class="editor-bar"><span>editor</span><span id="runStatus">جاهز</span></div><textarea id="editor" spellcheck="false" aria-label="محرر الكود"></textarea></div><div class="preview-wrap"><div class="editor-bar"><span>preview</span><span>LIVE</span></div><iframe id="preview" title="معاينة الكود" sandbox="allow-scripts"></iframe></div></div><div class="challenge"><b>تحدي اليوم:</b> اصنع زرًا يغيّر عنوان الصفحة عند الضغط عليه، ثم جرّب إضافة تصميمك الخاص.</div></div></section>
+<section id="projects" class="page"><div class="container page-title"><span class="eyebrow">PROJECT GARAGE</span><h1>مرآب المشاريع</h1><p>مشاريع مرتبة حسب المستوى لتخرج من مرحلة المشاهدة إلى البناء.</p></div><div class="container project-grid" id="projectGrid"></div></section>
+<section id="quiz" class="page"><div class="container page-title"><span class="eyebrow">CHALLENGE ARENA</span><h1>ساحة التحديات</h1><p>اختبر فهمك بسرعة، واحفظ أفضل نتيجة على جهازك.</p></div><div class="container quiz-layout"><div class="quiz-box premium-card"><div class="quiz-top"><span id="quizCount">0 / 8</span><span>أفضل نتيجة: <b id="bestScore">0%</b></span></div><div class="quiz-progress"><span id="quizBar"></span></div><div id="quizBody"></div></div><aside class="side-card premium-card"><span class="eyebrow">DAILY GOAL</span><div class="goal-ring" id="goalRing">0%</div><h3>هدف اليوم</h3><p>أكمل 3 دروس أو تحديات.</p><button class="btn primary small" onclick="route('courses')">ابدأ الآن</button></aside></div></section>
+<section id="dashboard" class="page"><div class="container page-title"><span class="eyebrow">YOUR COMMAND CENTER</span><h1>لوحة رحلتك</h1><p>تقدمك، XP، السلسلة والإنجازات في مكان واحد.</p></div><div class="container dashboard-grid"><div class="dash-card profile-card premium-card"><div class="big-avatar" id="dashAvatar">M</div><h2 id="dashName">زائر CodeMaster</h2><p id="dashEmail">لم تسجل الدخول بعد</p><button class="btn primary" id="dashLogin">إنشاء ملف محلي</button></div><div class="dash-card stat-card premium-card"><span class="eyebrow">PROGRESS</span><div class="progress-ring" id="progressRing">0%</div><div class="stat-row"><span>الدروس</span><b id="doneCount">0</b></div><div class="stat-row"><span>XP</span><b id="xpCount">0</b></div></div><div class="dash-card premium-card"><span class="eyebrow">STREAK</span><div class="big-number" id="streakCount">0</div><h3>أيام متتالية 🔥</h3><p>ارجع كل يوم لتبني عادة تعلم قوية.</p><div class="week" id="weekDots"></div></div></div><div class="container dashboard-lower"><div class="dash-card premium-card"><span class="eyebrow">ACHIEVEMENTS</span><div class="achievement-grid" id="achievementGrid"></div></div><div class="dash-card premium-card"><span class="eyebrow">RECENT ACTIVITY</span><div id="activityList" class="activity-list"></div></div></div></section>
+</main>
+
+<div class="mobile-nav"><button data-route="home">⌂<small>الرئيسية</small></button><button data-route="paths">◈<small>المسارات</small></button><button data-route="practice">⌘<small>المختبر</small></button><button data-route="dashboard">◎<small>حسابي</small></button></div>
+<div class="modal" id="modal"><div class="modal-card" id="modalCard"></div></div>
+<div class="search-overlay" id="searchOverlay"><div class="search-panel"><button class="close-x" id="closeSearch">✕</button><span class="eyebrow">GLOBAL SEARCH</span><h2>ابحث في CodeMaster</h2><div class="search-box big"><span>⌕</span><input id="globalSearch" placeholder="اكتب اسم تقنية أو مسار..." autocomplete="off"></div><div id="globalResults"></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<footer class="footer"><div class="container footer-grid"><div><b class="footer-brand">&lt;/&gt; CodeMaster</b><p>تعلّم. طبّق. ابنِ.</p></div><div><b>استكشف</b><button data-route="paths">المسارات</button><button data-route="courses">الدورات</button><button data-route="videos">الفيديوهات</button><button data-route="projects">المشاريع</button></div><div><b>طوّر نفسك</b><button data-route="practice">المختبر</button><button data-route="quiz">التحديات</button><button data-route="dashboard">لوحتي</button></div><div><b>المنصة</b><a class="admin-link" href="admin.html">لوحة الإدارة</a><button id="shareBtn">مشاركة CodeMaster</button></div></div><div class="container footer-bottom"><span>© 2026 CodeMaster</span><span>صنع بحماس للتعلم العربي 💚</span></div></footer>
+<script src="app.js"></script>
+
+
+<script id="cm-ad-guard">
+(() => {
+  const badHosts = /(^|\.)((doubleclick|googlesyndication|googleadservices|adnxs|adsrvr|taboola|outbrain|popads|propellerads|adservice|amazon-adsystem)\.)/i;
+  const badWords = /\b(advertisement|sponsored|adsense|doubleclick|googlesyndication)\b/i;
+  const clean = () => {
+    document.querySelectorAll('iframe,script,ins,div').forEach(el => {
+      const s = [
+        el.id || '', el.className || '', el.getAttribute?.('src') || '',
+        el.getAttribute?.('data-ad-client') || '', el.getAttribute?.('data-ad-slot') || ''
+      ].join(' ');
+      if (badHosts.test(s) || badWords.test(s)) el.remove();
+    });
+  };
+  clean();
+  new MutationObserver(clean).observe(document.documentElement, {childList:true, subtree:true});
+})();
+</script>
+
+</body></html>

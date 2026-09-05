@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#06100d"><title>CodeMaster Admin — لوحة الإدارة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="bg"></div>
+<aside class="sidebar">
+  <a class="brand" href="index.html"><span>&lt;/&gt;</span> CodeMaster <b>ADMIN</b></a>
+  <div class="admin-profile"><div class="avatar">M</div><div><strong>محمود</strong><small>مدير المنصة</small></div><i>●</i></div>
+  <nav id="adminNav">
+    <button class="active" data-view="overview">▦ <span>نظرة عامة</span></button>
+    <button data-view="users">♙ <span>المستخدمون</span></button>
+    <button data-view="courses">◈ <span>الدورات</span></button>
+    <button data-view="content">▤ <span>المحتوى</span></button>
+    <button data-view="activity">⌁ <span>النشاط</span></button>
+    <button data-view="settings">⚙ <span>الإعدادات</span></button>
+  </nav>
+  <a class="back" href="index.html">← العودة للموقع</a>
+</aside>
+<main class="main">
+<header class="top"><div><span class="eyebrow">CONTROL CENTER</span><h1 id="viewTitle">نظرة عامة</h1></div><div class="top-actions"><button class="icon" id="theme">☾</button><button class="primary" id="exportBtn">تصدير البيانات</button></div></header>
+<section id="overview" class="view active">
+  <div class="stats"><article><span>المستخدمون</span><b id="statUsers">0</b><small>حساب مسجل</small></article><article><span>الدورات</span><b id="statCourses">0</b><small>دورة منشورة</small></article><article><span>الدروس</span><b id="statLessons">0</b><small>درس داخل المحتوى</small></article><article><span>التقدم</span><b id="statProgress">0%</b><small>متوسط تقدّم تجريبي</small></article></div>
+  <div class="grid2"><div class="card"><div class="card-head"><div><span class="eyebrow">ACTIVITY</span><h2>نشاط المنصة</h2></div><span class="live">LIVE</span></div><div class="chart" id="activityChart"></div></div>
+  <div class="card"><div class="card-head"><div><span class="eyebrow">QUICK ACTIONS</span><h2>إجراءات سريعة</h2></div></div><div class="quick"><button data-action="newCourse">＋ إضافة دورة</button><button data-action="newUser">＋ إضافة مستخدم</button><button data-action="content">▤ إدارة المحتوى</button><button data-action="backup">⇩ نسخة احتياطية</button></div></div></div>
+  <div class="card"><div class="card-head"><div><span class="eyebrow">RECENT USERS</span><h2>آخر المستخدمين</h2></div><button class="ghost" data-view="users">عرض الكل →</button></div><div class="table-wrap"><table><thead><tr><th>المستخدم</th><th>البريد</th><th>التاريخ</th><th>الحالة</th></tr></thead><tbody id="recentUsers"></tbody></table></div></div>
+</section>
+<section id="users" class="view"><div class="toolbar"><div class="search"><span>⌕</span><input id="userSearch" placeholder="ابحث بالاسم أو البريد"></div><button class="primary" data-action="newUser">＋ مستخدم جديد</button></div><div class="card"><div class="table-wrap"><table><thead><tr><th>الاسم</th><th>البريد</th><th>الدور</th><th>XP</th><th>آخر دخول</th><th>إجراء</th></tr></thead><tbody id="usersTable"></tbody></table></div></div></section>
+<section id="courses" class="view"><div class="toolbar"><div><span class="eyebrow">COURSE MANAGER</span><h2>إدارة الدورات</h2></div><button class="primary" data-action="newCourse">＋ دورة جديدة</button></div><div class="course-admin-grid" id="coursesGrid"></div></section>
+<section id="content" class="view"><div class="content-grid"><div class="card"><span class="eyebrow">LESSON BUILDER</span><h2>إضافة درس</h2><label>عنوان الدرس<input id="lessonTitle" placeholder="مثال: المتغيرات في JavaScript"></label><label>الدورة<select id="lessonCourse"></select></label><label>رابط الفيديو<input id="lessonVideo" placeholder="https://..."></label><label>الوصف<textarea id="lessonDesc" placeholder="شرح مختصر للدرس"></textarea></label><button class="primary full" id="addLesson">حفظ الدرس</button></div><div class="card"><span class="eyebrow">CONTENT LIST</span><h2>آخر الدروس</h2><div id="lessonsList" class="lessons-list"></div></div></div></section>
+<section id="activity" class="view"><div class="card"><div class="card-head"><div><span class="eyebrow">AUDIT LOG</span><h2>سجل النشاط</h2></div><button class="danger ghost" id="clearActivity">مسح السجل</button></div><div id="activityList" class="activity-list"></div></div></section>
+<section id="settings" class="view"><div class="settings-grid"><div class="card"><span class="eyebrow">PLATFORM</span><h2>إعدادات المنصة</h2><label>اسم المنصة<input id="siteName" value="CodeMaster"></label><label>وصف المنصة<textarea id="siteDesc">منصة عربية مجانية لتعلم البرمجة.</textarea></label><label class="switch"><input type="checkbox" id="maintenance"><span></span> وضع الصيانة</label><button class="primary" id="saveSettings">حفظ الإعدادات</button></div><div class="card warning"><span class="eyebrow">SECURITY</span><h2>مهم قبل النشر</h2><p>هذه لوحة إدارة محلية للنسخة التجريبية. لا تعتبر تسجيل الدخول المحلي حماية حقيقية.</p><p>للنشر، اربط لوحة الإدارة بخادم وFirebase Authentication/Firestore مع قواعد أمان وصلاحيات Admin حقيقية.</p><a href="https://firebase.google.com/docs/auth/admin" target="_blank" rel="noreferrer">وثائق Firebase Admin ↗</a></div></div></section>
+</main>
+<div class="modal" id="modal"><div class="modal-card" id="modalCard"></div></div><div class="toast" id="toast"></div>
+<script src="admin.js"></script>
+</body></html>

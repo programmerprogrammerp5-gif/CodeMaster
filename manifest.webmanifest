@@ -1,0 +1,9 @@
+{
+  "name": "CodeMaster",
+  "short_name": "CodeMaster",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07110b",
+  "theme_color": "#a6ff00",
+  "description": "منصة عربية لتعلم البرمجة والمسارات والمشاريع."
+}
